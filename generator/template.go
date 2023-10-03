@@ -581,6 +581,8 @@ func mapWellKnownType(protoType string) string {
 		return "StructPBValue[]"
 	case ".google.protobuf.Struct":
 		return "{ [key: string]: StructPBValue }"
+	case ".google.protobuf.FieldMask":
+		return "string | null"
 	}
 
 	return ""
