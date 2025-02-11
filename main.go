@@ -8,8 +8,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dpup/protoc-gen-grpc-gateway-ts/generator"
-	"github.com/dpup/protoc-gen-grpc-gateway-ts/registry"
+	"github.com/BeProductable/protoc-gen-grpc-gateway-ts/generator"
+	"github.com/BeProductable/protoc-gen-grpc-gateway-ts/registry"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/pluginpb"
 )

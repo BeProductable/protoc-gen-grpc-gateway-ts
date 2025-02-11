@@ -11,8 +11,8 @@ import (
 
 	"github.com/Masterminds/sprig"
 
-	"github.com/dpup/protoc-gen-grpc-gateway-ts/data"
-	"github.com/dpup/protoc-gen-grpc-gateway-ts/registry"
+	"github.com/BeProductable/protoc-gen-grpc-gateway-ts/data"
+	"github.com/BeProductable/protoc-gen-grpc-gateway-ts/registry"
 
 	_ "embed"
 )

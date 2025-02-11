@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/dpup/protoc-gen-grpc-gateway-ts/data"
-	"github.com/dpup/protoc-gen-grpc-gateway-ts/options"
+	"github.com/BeProductable/protoc-gen-grpc-gateway-ts/data"
+	"github.com/BeProductable/protoc-gen-grpc-gateway-ts/options"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/descriptorpb"
