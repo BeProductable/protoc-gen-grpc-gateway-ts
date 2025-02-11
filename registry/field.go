@@ -92,7 +92,7 @@ func (r *Registry) analyseField(
 	// if it's a one of field. register the field data in the group of the same one of index.
 	// internally, optional fields are modeled as OneOf, however, we don't want to include them here.
 	if fieldData.IsOneOfField && !fieldData.IsOptional {
-		index := f.GetOneofIndex()
+		index := int(f.GetOneofIndex())
 		fieldData.OneOfIndex = index
 		_, ok := msgData.OneOfFieldsGroups[index]
 		if !ok {

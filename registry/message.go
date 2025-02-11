@@ -75,7 +75,7 @@ func (r *Registry) analyseMessage(
 
 	// store a map of one of names
 	for idx, oneOf := range message.GetOneofDecl() {
-		data.OneOfFieldsNames[int32(idx)] = oneOf.GetName()
+		data.OneOfFieldsNames[idx] = oneOf.GetName()
 	}
 
 	// analyse fields in the messages

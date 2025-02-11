@@ -22,10 +22,10 @@ type Message struct {
 	Messages []*Message
 	// OneOfFieldsGroups is the grouped list of one of fields with same index. so
 	// that renderer can render the clearing of other fields on set.
-	OneOfFieldsGroups map[int32][]*Field
+	OneOfFieldsGroups map[int][]*Field
 	// OneOfFieldNames is the names of one of fields with same index. so that
 	// renderer can render the clearing of other fields on set.
-	OneOfFieldsNames map[int32]string
+	OneOfFieldsNames map[int]string
 }
 
 // HasOneOfFields returns true when the message has a one of field.
@@ -57,8 +57,8 @@ func NewMessage() *Message {
 		Enums:             make([]*NestedEnum, 0),
 		Fields:            make([]*Field, 0),
 		Messages:          make([]*Message, 0),
-		OneOfFieldsGroups: make(map[int32][]*Field),
-		OneOfFieldsNames:  make(map[int32]string),
+		OneOfFieldsGroups: make(map[int][]*Field),
+		OneOfFieldsNames:  make(map[int]string),
 	}
 }
 
@@ -97,7 +97,7 @@ type Field struct {
 	// Message is the reference back to the parent message
 	Message *Message
 	// OneOfIndex is the index in the one of fields
-	OneOfIndex int32
+	OneOfIndex int
 	// IsRepeated indicates whether the field is a repeated field
 	IsRepeated bool
 }
